@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".RegisterActivity"
+    android:background="@color/white">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvRegisterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_btn"
+        android:textSize="28sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/purple_main" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etRegisterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/lock"
+        style="@style/Input"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etRegisterEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/email"
+        style="@style/Input"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/lock"
+        style="@style/Input"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etRegisterConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/lock"
+        style="@style/Input"
+        android:layout_marginBottom="16dp"
+
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:backgroundTint="@color/purple_main"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvLoginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_an_account_login"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/let_s_sign_in"
+        android:textColor="@color/purple_main"
+        android:textSize="18sp"
+        android:layout_gravity="center"/>
+</LinearLayout>

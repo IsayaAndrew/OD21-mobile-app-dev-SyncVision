@@ -35,4 +35,40 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("LoginActivity", "onStart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("LoginActivity", "onResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("LoginActivity", "onPause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("LoginActivity", "onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("LoginActivity", "onDestroy");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("LoginActivity", "onRestart");
+    }
 }

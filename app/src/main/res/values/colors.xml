@@ -10,4 +10,9 @@
     <color name="purple_main">#6C63FF</color>
     <color name="grey">#979A9A</color>
     <color name="grey_2">#ced4da</color>
+    <color name="switch_thumb_color">#FFFFFF</color>
+    <color name="switch_track_color">#000000</color>
+    <color name="switch_thumb_color_dark">#000000</color>
+    <color name="switch_track_color_dark">#FFFFFF</color>
+
 </resources>

@@ -4,105 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     tools:context=".LoginActivity">
+
 
 
     <LinearLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical"
         android:padding="16dp"
-        android:gravity="center"
-        tools:context=".LoginActivity"
-        android:background="@color/white">
+        tools:context=".LoginActivity">
+
 
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvLoginTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login_str"
-            android:textSize="28sp"
             android:layout_gravity="center"
             android:layout_marginBottom="32dp"
-            android:textColor="@color/purple_main" />
+            android:text="@string/login_str"
+            android:textColor="@color/purple_main"
+            android:textSize="28sp" />
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login_text"
             android:layout_gravity="center"
             android:layout_marginBottom="16dp"
-            android:textSize="18sp"
-            android:textColor="@color/grey" />
+            android:text="@string/login_text"
+            android:textColor="@color/grey"
+            android:textSize="18sp" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etEmail"
+            style="@style/Input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:drawableStart="@drawable/email"
             android:hint="@string/enter_email"
             android:inputType="textEmailAddress"
-            android:drawableStart="@drawable/email"
-            style="@style/Input"
-            android:layout_marginBottom="16dp"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            android:textCursorDrawable="@drawable/black_cursor"/>
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textSize="16sp" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPassword"
+            style="@style/Input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:drawableStart="@drawable/lock"
             android:hint="@string/enter_password"
             android:inputType="textPassword"
-            android:drawableStart="@drawable/lock"
-            style="@style/Input"
-            android:layout_marginBottom="16dp"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            android:textCursorDrawable="@drawable/black_cursor"/>
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textSize="16sp" />
 
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sign_in"
-            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
             android:backgroundTint="@color/purple_main"
+            android:text="@string/sign_in"
             android:textColor="@color/white"
-            android:layout_marginBottom="16dp"/>
+            android:textSize="18sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:text="@string/don_t_have_an_account"
+            android:textColor="@color/grey"
+            android:textSize="16sp" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvRegisterLink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/don_t_have_an_account"
             android:layout_gravity="center"
-            android:layout_marginBottom="8dp"
-            android:textSize="16sp"
-            android:textColor="@color/grey" />
-
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/let_s_register"
             android:textColor="@color/purple_main"
-            android:textSize="18sp"
-            android:layout_gravity="center"/>
+            android:textSize="18sp" />
 
-<!--        <Switch-->
-<!--            android:id="@+id/darkModeSwitch"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="bottom|end"-->
-<!--            android:layout_marginEnd="16dp"-->
-<!--            android:layout_marginBottom="16dp"-->
-<!--            android:text="@string/dark_mode_text" />-->
 
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -111,14 +104,13 @@
         android:gravity="bottom|end"
         android:padding="16dp"
         android:layout_gravity="bottom">
+        <Switch
+            android:id="@+id/switcher"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabToggleDarkMode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/purple_main"
-            android:contentDescription="@string/dark_mode_toggle"
-            app:fabSize="normal" />
+
     </LinearLayout>
 
 </FrameLayout>
